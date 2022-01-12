@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{606A9C89-C95E-47B1-BCCD-1EC28876C165}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>D:\itextsharp\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Print\fPrintSCoreTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\fPrintSCoreTable.Designer.cs">
+      <DependentUpon>fPrintSCoreTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\fSheetSroce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\fSheetSroce.Designer.cs">
+      <DependentUpon>fSheetSroce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\fTotalSroce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\fTotalSroce.Designer.cs">
+      <DependentUpon>fTotalSroce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\fPrintStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\fPrintStudent.Designer.cs">
+      <DependentUpon>fPrintStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\fClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\fClass.Designer.cs">
+      <DependentUpon>fClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\fPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\fPrint.Designer.cs">
+      <DependentUpon>fPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\fSroce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\fSroce.Designer.cs">
+      <DependentUpon>fSroce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\fStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\fStudent.Designer.cs">
+      <DependentUpon>fStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\fSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\fSubject.Designer.cs">
+      <DependentUpon>fSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\fLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\fLogin.Designer.cs">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\fMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\fMain.Designer.cs">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Print\fPrintSCoreTable.resx">
+      <DependentUpon>fPrintSCoreTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\fSheetSroce.resx">
+      <DependentUpon>fSheetSroce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\fTotalSroce.resx">
+      <DependentUpon>fTotalSroce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\fPrintStudent.resx">
+      <DependentUpon>fPrintStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\fClass.resx">
+      <DependentUpon>fClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\fPrint.resx">
+      <DependentUpon>fPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\fSroce.resx">
+      <DependentUpon>fSroce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\fStudent.resx">
+      <DependentUpon>fStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\fSubject.resx">
+      <DependentUpon>fSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\fLogin.resx">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\fMain.resx">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
